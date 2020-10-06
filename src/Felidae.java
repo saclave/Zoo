@@ -1,7 +1,7 @@
 public class Felidae extends Animal{
 
-    public Felidae(int age, double weight, double running, String eating) {
-        super(age, weight, running, eating);
+    public Felidae(int age, double weight) {
+        super(age, weight);
     }
 
     public String behavior(){

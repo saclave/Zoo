@@ -4,11 +4,17 @@ public class Animal {
     public double running;
     public String eating;
 
-    public Animal(int age, double weight, double running, String eating){
+    public Animal(int age, double weight){
         this.age = age;
         this.weight = weight;
-        this.running = running;
-        this.eating = eating;
+    }
+
+    public void running(){
+        System.out.println("is running");
+    }
+
+    public void eating(){
+        System.out.println("is eating");
     }
 
     public Animal setAge(int age){
@@ -29,21 +35,4 @@ public class Animal {
         return age;
     }
 
-    public Animal setRunning(double running){
-        this.running = running;
-        return this;
-    }
-
-    public double getRunning(){
-        return running;
-    }
-
-    public Animal setEating(String eating){
-        this.eating = eating;
-        return this;
-    }
-
-    public String setEating(){
-        return eating;
-    }
 }
